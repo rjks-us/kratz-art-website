@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:wght@600&family=Nuosu+SIL&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scroll {
+    0% {
+        top: -100%; /* Start above the screen */
+    }
+    100% {
+        top: 100%; /* End below the screen */
+    }
+}
+
+.big-first-letter::first-letter {
+    float: left;
+    font-size: 3em; /* Adjust as necessary */
+    line-height: 1;
+    margin-right: 0.1em;
+    font-family: Inria Serif, serif;
+    font-weight: bold; /* Optional, as you can control this with Tailwind */
+}
