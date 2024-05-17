@@ -1,7 +1,8 @@
 import FloatingActionButton from '@/components/buttons/FloatingActionButton';
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 
 const IMAGES = [
     '/images/rost/glocke.jpg',
@@ -17,7 +18,6 @@ const IMAGES = [
     '/images/rost/universum.jpg',
     '/images/rost/zaun.jpg',
     '/images/rost/zelt.jpg',
-    '/images/rost/ziegel.jpg',
     '/images/rost/zwei_freunde.jpg',
     '/images/aquarell/teppich.jpg',
     '/images/aquarell/sonnenblumen.jpg',
@@ -51,17 +51,16 @@ export default function Home() {
 
     return (
         <>
-            {/* <FloatingActionButton>
-                <Link lang="de" href="/art">
-                    <Image
-                        src={'/icons/flags/de.svg'}
-                        alt="de"
-                        width={48}
-                        height={48}
-                        className="p-2 rounded-md cursor-pointer"
-                    />
-                </Link>
-            </FloatingActionButton> */}
+            <NextSeo
+                title="Ernst Jürgen Kratz - kratz-art.de"
+                description="Ernst Jürgen Kratz - Werke, Ausstellungen, Kontakt, Vita"
+                openGraph={{
+                    title: 'Ernst Jürgen Kratz - kratz-art.de',
+                    description:
+                        'Ernst Jürgen Kratz, geboren 1935 in Düsseldorf, war Richter und Vizepräsident des Oberlandesgerichts Düsseldorf. Seit 2000 widmet er sich der Kunst, inspiriert von seiner Kindheit und modernen Kunsttheorien.',
+                    images: [{ url: '/images/ernst_juergen_kratz_portrait.jpg' }],
+                }}
+            />
             <div className="flex flex-col md:flex-row justify-between items-start">
                 <div className="w-full md:w-1/2 flex justify-center items-center h-[85vh] md:h-screen bg-[#EEEAE4] min-h-[512px]">
                     <div className="flex flex-col items-center space-y-4">

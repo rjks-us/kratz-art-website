@@ -1,9 +1,11 @@
+import { NextSeo } from 'next-seo';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Vita() {
     return (
         <>
+            <NextSeo title="Datenschutz" description="Datenschutz" nofollow={true} noindex={true} />
             <div className="flex flex-col items-center bg-[#EEEAE4]">
                 <div className="flex flex-col justify-start items-start space-y-4 font-normal max-w-5xl w-full px-6 py-8">
                     <h2 className="font-serif text-md md:text-xl uppercase font-normal text-center text-black p-2">
