@@ -8,8 +8,5 @@ services:
     ports:
       - "4000:3000"
     restart: unless-stopped
-    working_dir: /app
-    volumes:
-      - .:/app
     environment:
       - NODE_ENV=production
