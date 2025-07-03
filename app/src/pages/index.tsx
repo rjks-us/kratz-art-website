@@ -70,7 +70,7 @@ export default function Home() {
                         <div className="border border-black w-8"></div>
                         <Title text="Werke" link="/vernissage-2025" />
                         <Title text="Ausstellungen" link="/ausstellungen" />
-                        <Title text="Kontakt" link="mailto:robert.kratz@rjks.us" />
+                        <Title text="Kontakt" link="/kontakt" />
                         <Title text="Vita" link="/vita" />
                         <div className="border border-black w-8"></div>
                         <Link
