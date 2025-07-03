@@ -5,26 +5,26 @@ import Link from 'next/link';
 import { Fragment, useEffect, useRef, useState } from 'react';
 
 const IMAGES = [
-    '/images/rost/glocke.jpg',
-    '/images/rost/kartenspiel.jpg',
-    '/images/rost/loop.jpg',
-    '/images/rost/milchstrasse.jpg',
-    '/images/rost/narben.jpg',
-    '/images/rost/schnur.jpg',
-    '/images/rost/sonne.jpg',
-    '/images/rost/splash.jpg',
-    '/images/rost/taschentuch.jpg',
-    '/images/rost/tor.jpg',
-    '/images/rost/universum.jpg',
-    '/images/rost/zaun.jpg',
-    '/images/rost/zelt.jpg',
-    '/images/rost/zwei_freunde.jpg',
-    '/images/aquarell/teppich.jpg',
-    '/images/aquarell/sonnenblumen.jpg',
-    '/images/aquarell/quallen.jpg',
-    '/images/aquarell/menschliches_herz.jpg',
-    '/images/aquarell/feuerwerk.jpg',
-    '/images/aquarell/bomben.jpg',
+    '/images/rost/glocke.jpeg',
+    '/images/rost/kartenspiel.jpeg',
+    '/images/rost/loop.jpeg',
+    '/images/rost/milchstrasse.jpeg',
+    '/images/rost/narben.jpeg',
+    '/images/rost/schnur.jpeg',
+    '/images/rost/sonne.jpeg',
+    '/images/rost/splash.jpeg',
+    '/images/rost/taschentuch.jpeg',
+    '/images/rost/tor.jpeg',
+    '/images/rost/universum.jpeg',
+    '/images/rost/zaun.jpeg',
+    '/images/rost/zelt.jpeg',
+    '/images/rost/zwei_freunde.jpeg',
+    '/images/aquarell/teppich.jpeg',
+    '/images/aquarell/sonnenblumen.jpeg',
+    '/images/aquarell/quallen.jpeg',
+    '/images/aquarell/menschliches_herz.jpeg',
+    '/images/aquarell/feuerwerk.jpeg',
+    '/images/aquarell/bomben.jpeg',
 ];
 
 export default function Home() {
@@ -68,27 +68,21 @@ export default function Home() {
                             Ernst Jürgen Kratz
                         </h2>
                         <div className="border border-black w-8"></div>
-                        <Title text="Werke" link="#" />
+                        <Title text="Werke" link="/vernissage-2025" />
                         <Title text="Ausstellungen" link="/ausstellungen" />
                         <Title text="Kontakt" link="mailto:robert.kratz@rjks.us" />
                         <Title text="Vita" link="/vita" />
                         <div className="border border-black w-8"></div>
-                        {/* <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2">
-                            <Link href="/art/rost" className="font-light text-black ">
-                                Rostbilder
-                            </Link>
-                            <Link href="/art/aquarelle" className="font-light text-black">
-                                Aquarelle
-                            </Link>
-                            <Link href="/art/abstrakte-kunst" className="font-light text-black">
-                                Abstrakte Kunst
-                            </Link>
-                        </div> */}
                         <Link
-                            href={'mailto:robert.kratz@rjks.us'}
-                            className="px-4 py-3 text-md rounded-full bg-black cursor-pointertransform hover:translate-y-1">
-                            <p className="font-sans text-xs tracking-wide text-white">Drucke auf Aluminium</p>
+                            href={'/vernissage-2025'}
+                            className="px-6 py-3 text-md rounded-full bg-black cursor-pointer transform hover:translate-y-1 transition">
+                            <p className="font-sans text-xs tracking-wide text-white">Vernissage 2025</p>
                         </Link>
+                        {/*<Link
+                            href={'mailto:robert.kratz@rjks.us'}
+                            className="px-4 py-3 text-md rounded-full bg-gray-700 cursor-pointer transform hover:translate-y-1 transition">
+                            <p className="font-sans text-xs tracking-wide text-white">Drucke auf Aluminium</p>
+                        </Link>*/}
                     </div>
                 </div>
                 <div className="bg-[#E2DEDB] md:h-screen w-full md:w-1/2 cursor-pointer">
